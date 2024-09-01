@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Schedule</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .completed {
+            text-decoration: line-through;
+            background-color: #d3ffd3;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Weekly Schedule</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>8:45 - 15:40</td>
+            <td><button onclick="markCompleted(this)">College Hours</button></td>
+            <td><button onclick="markCompleted(this)">College Hours</button></td>
+            <td><button onclick="markCompleted(this)">College Hours</button></td>
+            <td><button onclick="markCompleted(this)">College Hours</button></td>
+            <td><button onclick="markCompleted(this)">College Hours</button></td>
+            <td><button onclick="markCompleted(this)">Free Time</button></td>
+            <td><button onclick="markCompleted(this)">Free Time</button></td>
+        </tr>
+        <tr>
+            <td>15:40 - 16:00</td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>16:00 - 17:45</td>
+            <td><button onclick="markCompleted(this)">DSA</button></td>
+            <td><button onclick="markCompleted(this)">Full Stack</button></td>
+            <td><button onclick="markCompleted(this)">Blockchain</button></td>
+            <td><button onclick="markCompleted(this)">DSA</button></td>
+            <td><button onclick="markCompleted(this)">Full Stack</button></td>
+            <td><button onclick="markCompleted(this)">DSA</button></td>
+            <td><button onclick="markCompleted(this)">Review & Practice</button></td>
+        </tr>
+        <tr>
+            <td>17:45 - 18:00</td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+        </tr>
+        <tr>
+            <td>18:00 - 19:45</td>
+            <td><button onclick="markCompleted(this)">Full Stack</button></td>
+            <td><button onclick="markCompleted(this)">Blockchain</button></td>
+            <td><button onclick="markCompleted(this)">DSA</button></td>
+            <td><button onclick="markCompleted(this)">Full Stack</button></td>
+            <td><button onclick="markCompleted(this)">Blockchain</button></td>
+            <td><button onclick="markCompleted(this)">Full Stack</button></td>
+            <td><button onclick="markCompleted(this)">Project Work</button></td>
+        </tr>
+        <tr>
+            <td>19:45 - 20:00</td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+            <td><button onclick="markCompleted(this)">Break</button></td>
+        </tr>
+        <tr>
+            <td>20:00 - 21:00</td>
+            <td><button onclick="markCompleted(this)">Dinner</button></td>
+            <td><button onclick="markCompleted(this)">Dinner</button></td>
+            <td><button onclick="markCompleted(this)">Dinner</button></td>
+            <td><button onclick="markCompleted(this)">Dinner</button></td>
+            <td><button onclick="markCompleted(this)">Dinner</button></td>
+            <td><button onclick="markCompleted(this)">Dinner</button></td>
+            <td><button onclick="markCompleted(this)">Dinner</button></td>
+        </tr>
+        <tr>
+            <td>21:00 - 22:45</td>
+            <td><button onclick="markCompleted(this)">Blockchain</button></td>
+            <td><button onclick="markCompleted(this)">DSA</button></td>
+            <td><button onclick="markCompleted(this)">Full Stack</button></td>
+            <td><button onclick="markCompleted(this)">Blockchain</button></td>
+            <td><button onclick="markCompleted(this)">DSA</button></td>
+            <td><button onclick="markCompleted(this)">Blockchain</button></td>
+            <td><button onclick="markCompleted(this)">Planning Next Week</button></td>
+        </tr>
+        <tr>
+            <td>22:45 - 24:00</td>
+            <td><button onclick="markCompleted(this)">College Subjects</button></td>
+            <td><button onclick="markCompleted(this)">College Subjects</button></td>
+            <td><button onclick="markCompleted(this)">College Subjects</button></td>
+            <td><button onclick="markCompleted(this)">College Subjects</button></td>
+            <td><button onclick="markCompleted(this)">College Subjects</button></td>
+            <td><button onclick="markCompleted(this)">Free Time</button></td>
+            <td><button onclick="markCompleted(this)">Free Time</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    // Mark task as completed
+    function markCompleted(button) {
+        button.classList.toggle('completed');
+        button.textContent = button.classList.contains('completed') ? 'Completed' : button.textContent.replace('Completed', button.textContent);
+    }
+
+    // Reset all tasks on Sunday at 24:00
+    function resetSchedule() {
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.classList.remove('completed');
+            button.textContent = button.textContent.replace('Completed', button.textContent);
+        });
+    }
+
+    // Check the day and time every minute
+    setInterval(() => {
+        const now = new Date();
+        const day = now.getDay(); // Sunday is 0, Monday is 1, and so on.
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+
+        // Reset the schedule if it's Sunday at midnight
+        if (day === 0 && hours === 0 && minutes === 0) {
+            resetSchedule();
+        }
+    }, 60000); // Check every minute (60000 milliseconds)
+
+</script>
+
+</body>
+</html>
